@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Ejercicio 8</title>
+
+</head>
+
+<body>
+
+  <div class="head">
+
+    <nav class="navbar">
+      <a href="#contain header">Acerca de</a>
+      <a href="#portafolio">Portafolio</a>
+      <a href="#formulario">contacto</a>
+
+    </nav>
+
+  </div>
+  <section id="contain header">
+    <div>
+      <h1 class="title">Acerca de</h1>
+
+      <p>Lorem ipsum dolor sit amet consectetur adipiscing elit auctor, nostra habitasse nulla faucibus dignissim cras
+        curabitur aliquet, duis placerat hendrerit metus sollicitudin tortor lectus. Aliquam vestibulum ad fames cursus
+        suscipit eros ut convallis erat, ullamcorper dictumst et dui euismod class ultricies placerat vitae, senectus
+        eleifend montes lectus sodales felis tempor augue. Varius dictum integer sociosqu ac condimentum habitasse,
+        faucibus enim urna odio
+      </p>
+      <br>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipiscing elit auctor, nostra habitasse nulla faucibus dignissim cras
+        curabitur aliquet, duis placerat hendrerit metus sollicitudin tortor lectus. Aliquam vestibulum ad fames cursus
+        suscipit eros ut convallis erat, ullamcorper dictumst et dui euismod class ultricies placerat vitae, senectus
+        eleifend montes lectus sodales felis tempor augue. Varius dictum integer sociosqu ac condimentum habitasse,
+        faucibus enim urna odio.
+      </p>
+      <img src="descarga.jpg">
+    </div>
+  </section>
+
+  <section id="portafolio">
+    <h1 class="title">Portafolio</h1>
+    <figure>
+      <img src="descarga.jpg" alt="foto">
+      <figcaption>foto1</figcaption>
+    </figure>
+    <figure>
+      <img src="descarga.jpg" alt="foto">
+      <figcaption>foto2</figcaption>
+    </figure>
+    <figure>
+      <img src="descarga.jpg" alt="foto">
+      <figcaption>foto3</figcaption>
+    </figure>
+
+  </section>
+  <section id="formulario">
+    <div class="contact_form">
+
+      <div class="formulario">
+        <h1 class="title">Formulario de contacto</h1>
+        <h3>Escríbenos y en breve los pondremos en contacto contigo</h3>
+
+
+        <form action="submeter-formulario.php" method="post">
+
+
+          <p>
+            <label for="nombre" class="colocar_nombre">Nombre
+              <span class="obligatorio">*</span>
+            </label>
+            <input type="text" name="introducir_nombre" id="nombre" required="obligatorio"
+              placeholder="Escribe tu nombre" minlength="1" maxlength="30">
+          </p>
+
+          <p>
+            <label for="email" class="colocar_email">Email
+              <span class="obligatorio">*</span>
+            </label>
+            <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email"
+              minlength="1" maxlength="100">
+          </p>
+
+          <p>
+            <label for="edad" class="colocar_edad">Edad
+            </label>
+            <input type="ed" name="introducir_edad" id="edad" placeholder="Escribe tu edad" minlength="1" maxlength="3">
+          </p>
+          <p>
+            <label for="politica privacidad" class="checkbox">Politica de privacidad
+            </label>
+            <input type="checkbox" name="introducir_politica privacidad" id="politica privacidad">
+          </p>
+
+          <p>
+            <label for="mensaje" class="colocar_mensaje">Mensaje
+              <span class="obligatorio">*</span>
+            </label>
+            <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio"
+              placeholder="Deja aquí tu comentario..."></textarea>
+          </p>
+
+          <button type="submit" name="enviar_formulario" id="enviar">
+            <p>Enviar</p>
+          </button>
+
+          <p class="aviso">
+            <span class="obligatorio"> * </span>los campos son obligatorios.
+          </p>
+
+        </form>
+      </div>
+    </div>
+  </section>
+  <footer class="site-footer">
+    <p>Rubén Flores Moyano</p>
+  </footer>
+</body>
